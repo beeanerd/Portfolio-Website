@@ -1,0 +1,9 @@
+.cards {
+  display: grid;
+  height: 25vh;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: .5em;
+}
+.card {
+  background-color: pink;
+}
