@@ -1,9 +1,61 @@
 .cards {
   display: grid;
-  height: 25vh;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template:
+  "e a"
+  "c d"
+  "b b";
   grid-gap: .5em;
+  padding: 0;
 }
 .card {
-  background-color: pink;
+  position: relative;
+  overflow: auto;
+}
+.card > img {
+  display: block;
+  width: 100%;
+}
+.desc__layer{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 1.5em;
+  background: rgba(10, 10, 10, 0.3);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity .2s, visibility .2s;
+}
+.card:hover .desc__layer {
+  visibility: visible;
+  opacity: 1;
+}
+
+.card__desc {
+  transition: .2s;
+  transform: translateY(1em);
+}
+
+.card:hover .card__desc {
+  transform: translateY(0);
+}
+.green {
+  grid-area: b;
+}
+.bay {
+  grid-area: a;
+}
+.perspective {
+  grid-area: c;
+}
+.pet {
+  grid-area: d;
+}
+.portrait {
+  grid-area: e;
 }
