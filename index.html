@@ -10,25 +10,16 @@
   <body>
     <div class="nav__bar">
       <ul>
-        <li class="title"><h1 >Alex Whitlock</h1></li>
-        <li class="nav__links nav__bar__links"><a href="/portfolio">Portfolio</a></li>
-        <li class="nav__links nav__bar__links"><a href="/contact">Contact</a></li>
-        <li class="social__links nav__bar__links"><img src="images/insta.png" class="social__logos" alt=""></li>
-        <li class="social__links nav__bar__links"><img src="images/flickr.png" class="social__logos" alt=""></li>
+        <div class="title">
+          <li class="nav__element"><h1>Alex Whitlock</h1></li>
+        </div>
+        <div class="links">
+          <li class="nav__element nav__links nav__bar__links active"><a href="/portfolio" class="active">Portfolio</a></li>
+          <li class="nav__element nav__links nav__bar__links"><a href="/contact">Contact</a></li>
+          <li class="nav__element social__links nav__bar__links"><a href=""><img src="images/insta.png" class="social__logos" alt=""></a></li>
+          <li class="nav__element social__links nav__bar__links"><a href=""><img src="images/flickr.png" class="social__logos" alt=""></a></li>
+        </div>
       </ul>
-      <div class="title">
-        <h1>Alex Whitlock</h1>
-      </div>
-      <div class="nav__bar__links">
-        <div class="nav__links">
-          <a href="/portfolio">Portfolio</a>
-          <a href="/contact">Contact</a>
-        </div>
-        <div class="social__links">
-
-
-        </div>
-      </div>
     </div>
     <div class="content">
       <div class="cards">
@@ -66,8 +57,12 @@
     </div>
     <div class="footer">
       <h2>Alex Whitlock</h2>
-      <h4>ae3whitlock@gmail.com</h4>
-      <h4>(678) 756-5099</h4>
+      <div class="contact__footer">
+        <h4>ae3whitlock@gmail.com</h4>
+        <h4>(678) 756-5099</h4>
+      </div>
+      <img src="images/flickr.png" class="social__logos" alt="">
+      <img src="images/insta.png" class="social__logos" alt="">
     </div>
   </body>
 </html>
