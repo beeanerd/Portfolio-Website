@@ -9,9 +9,23 @@ h1 {
 h2 {
   font-size: 2em;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.hero__image {
+  width: 100%;
+  max-height: 75vh;
+  position: absolute;
+  z-index: -1;
+}
+.spacer {
+  height: 55vh;
+}
 .nav__bar {
   padding: 0 2em;
-  height: 15vh;
+  padding-top: .5em;
+  height: 20vh;
   width: calc(100% - 4em);
 }
 .nav__bar ul {
@@ -27,7 +41,7 @@ h2 {
   vertical-align: middle;
   float: left;
 }
-.links {
+.nav__bar__links {
   justify-content: center;
   align-self: flex-end;
   margin: auto;
@@ -44,7 +58,7 @@ h2 {
   text-decoration: none;
 }
 .nav__bar li a:hover {
-  color: rgba(0, 0, 0, .7);
+  opacity: 70%;
 }
 .social__logos {
   height: 3vh;
@@ -69,4 +83,22 @@ h2 {
 }
 .active:hover {
   border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+}
+.photo__info {
+  display: grid;
+  grid-template: ". . . title desc . . .";
+  grid-column-gap: 4em;
+}
+.photo__title {
+  font-size: 3em;
+  grid-area: title;
+}
+.photo__desc {
+  font-size: 2em;
+  grid-area: desc;
+}
+.portfolio__nav{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
 }

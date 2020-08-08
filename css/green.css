@@ -1,0 +1,36 @@
+.photo__gallery {
+  display: grid;
+  grid-template:
+  "one two"
+  "three three"
+  "four five"
+  "six six";
+  grid-gap: 10em;
+  padding: 8em;
+}
+.photo {
+  overflow: auto;
+  position: relative;
+}
+.photo > img {
+  display: block;
+  width: 100%;
+}
+.one {
+  grid-area: one;
+}
+.two {
+  grid-area: two;
+}
+.three {
+  grid-area: three;
+}
+.four {
+  grid-area: four;
+}
+.five {
+  grid-area: five;
+}
+.six {
+  grid-area: six;
+}
